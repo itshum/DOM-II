@@ -69,3 +69,10 @@ const contentP1 = document.querySelector('.text-content p')
 contentP1.addEventListener('scroll', e=>{
     e.target.style.fontSize = '2rem';
 })
+
+// search in footer
+const search = document.getElementById('myInput');
+const demo = document.getElementById('demo');
+search.addEventListener('search', e=>{
+    demo.innerText = "I'm looking for:" + search.nodeValue;
+})
